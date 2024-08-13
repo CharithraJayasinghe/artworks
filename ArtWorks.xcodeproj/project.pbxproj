@@ -14,6 +14,10 @@
 		003444912C65D2D6000DEE79 /* ArtWorksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003444902C65D2D6000DEE79 /* ArtWorksTests.swift */; };
 		0034449B2C65D2D6000DEE79 /* ArtWorksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0034449A2C65D2D6000DEE79 /* ArtWorksUITests.swift */; };
 		0034449D2C65D2D6000DEE79 /* ArtWorksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0034449C2C65D2D6000DEE79 /* ArtWorksUITestsLaunchTests.swift */; };
+		003444AE2C68ECA0000DEE79 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003444AD2C68ECA0000DEE79 /* Artwork.swift */; };
+		003444B02C68F0C0000DEE79 /* ArtworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003444AF2C68F0C0000DEE79 /* ArtworkViewModel.swift */; };
+		003444B22C690158000DEE79 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003444B12C690158000DEE79 /* ArtworkView.swift */; };
+		003444B42C69C954000DEE79 /* ArtworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003444B32C69C954000DEE79 /* ArtworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		003444962C65D2D6000DEE79 /* ArtWorksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtWorksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0034449A2C65D2D6000DEE79 /* ArtWorksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorksUITests.swift; sourceTree = "<group>"; };
 		0034449C2C65D2D6000DEE79 /* ArtWorksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		003444AD2C68ECA0000DEE79 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		003444AF2C68F0C0000DEE79 /* ArtworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViewModel.swift; sourceTree = "<group>"; };
+		003444B12C690158000DEE79 /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
+		003444B32C69C954000DEE79 /* ArtworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		0034447E2C65D2D4000DEE79 /* ArtWorks */ = {
 			isa = PBXGroup;
 			children = (
+				003444AC2C65D344000DEE79 /* Models */,
+				003444AB2C65D335000DEE79 /* ViewModels */,
+				003444AA2C65D320000DEE79 /* Views */,
 				0034447F2C65D2D4000DEE79 /* ArtWorksApp.swift */,
-				003444812C65D2D4000DEE79 /* ContentView.swift */,
 				003444832C65D2D6000DEE79 /* Assets.xcassets */,
 				003444852C65D2D6000DEE79 /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				0034449C2C65D2D6000DEE79 /* ArtWorksUITestsLaunchTests.swift */,
 			);
 			path = ArtWorksUITests;
+			sourceTree = "<group>";
+		};
+		003444AA2C65D320000DEE79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				003444812C65D2D4000DEE79 /* ContentView.swift */,
+				003444B12C690158000DEE79 /* ArtworkView.swift */,
+				003444B32C69C954000DEE79 /* ArtworkDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		003444AB2C65D335000DEE79 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				003444AF2C68F0C0000DEE79 /* ArtworkViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		003444AC2C65D344000DEE79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				003444AD2C68ECA0000DEE79 /* Artwork.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				003444822C65D2D4000DEE79 /* ContentView.swift in Sources */,
+				003444B22C690158000DEE79 /* ArtworkView.swift in Sources */,
+				003444AE2C68ECA0000DEE79 /* Artwork.swift in Sources */,
 				003444802C65D2D4000DEE79 /* ArtWorksApp.swift in Sources */,
+				003444B42C69C954000DEE79 /* ArtworkDetailView.swift in Sources */,
+				003444B02C68F0C0000DEE79 /* ArtworkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
